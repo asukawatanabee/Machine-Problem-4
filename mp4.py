@@ -8,8 +8,6 @@ Created on Sun Dec  1 23:14:24 2019
 import math 
 from matplotlib import pyplot as plt
 def simulate_projectile_motion(s0,v0,theta0,ax,ay):
-    
-    
     if ay==0:
         print("Error: vertical acceleration cannot be 0")
         return  
@@ -48,9 +46,9 @@ def simulate_projectile_motion(s0,v0,theta0,ax,ay):
     plt.show()
         
 if __name__ == '__main__':
-   s0 = 8 # in meters
-   v0 = 14 # in meters per sec
-   theta0 = 65 # in degrees
-   ax = 0 # in meters per second squared
-   ay = -9.81 # in meters per second squared
+   s0 = int(input("Enter s0 in meters : "))
+   v0 = int(input("Enter v0 in m/s: "))
+   theta0 = int(input("Enter theta in degrees: "))
+   ax = int(input("Enter Acceleration in X-axis: "))
+   ay = -int(input("Enter Acceleration in Y-axis: "))
    simulate_projectile_motion(s0,v0,theta0,ax,ay)  
