@@ -46,9 +46,9 @@ def simulate_projectile_motion(s0,v0,theta0,ax,ay):
     plt.show()
         
 if __name__ == '__main__':
-   s0 = int(input("Enter s0 in meters : "))
-   v0 = int(input("Enter v0 in m/s: "))
-   theta0 = int(input("Enter theta in degrees: "))
-   ax = int(input("Enter Acceleration in X-axis: "))
-   ay = -int(input("Enter Acceleration in Y-axis: "))
+   s0 = float(input("Enter s0 in meters : "))
+   v0 = float(input("Enter v0 in m/s: "))
+   theta0 = float(input("Enter theta in degrees: "))
+   ax = float(input("Enter Acceleration in X-axis: "))
+   ay = float(input("Enter Acceleration in Y-axis: "))
    simulate_projectile_motion(s0,v0,theta0,ax,ay)  
